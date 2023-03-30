@@ -24,9 +24,9 @@ function HomepageHeader() {
                         variant="primary"
                         href={pdf}
                         target="_blank"
-                        style={{ maxWidth: "250px" }}
+                        style={{maxWidth: "250px"}}
                     >
-                        <AiOutlineDownload />
+                        <AiOutlineDownload/>
                         &nbsp;Download CV
                     </Button>
                 </div>
@@ -42,9 +42,9 @@ export default function Home() {
             title={`Hello from ${siteConfig.title}`}
             description="Description will go into a meta tag in <head />">
             <HomepageHeader/>
-            <main>
+            <main style={{display: 'flex', justifyContent: 'center'}}>
                 {/*<HomepageFeatures/>*/}
-                <ResumeNew></ResumeNew>
+                <ResumeNew/>
             </main>
         </Layout>
     );
